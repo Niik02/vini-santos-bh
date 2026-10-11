@@ -1,0 +1,8 @@
+{
+  "name": "Vini Santos | 6 Propostas para Belo Horizonte",
+  "description": "Site institucional de Vini Santos apresentando seis propostas sérias para transformar Belo Horizonte em educação, integridade pública, zeladoria urbana e gestão responsável.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
