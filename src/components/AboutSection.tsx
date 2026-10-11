@@ -13,7 +13,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onScrollToProposals 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
           {/* Photo & Profile Card */}
-          <div className="lg:col-span-5 sticky top-28">
+          <div className="lg:col-span-5 relative lg:sticky lg:top-28">
             <div className="bg-neutral-900 rounded-2xl p-3 sm:p-4 border-2 border-amber-400 shadow-xl">
               <div className="aspect-[4/5] w-full rounded-xl overflow-hidden bg-neutral-800 flex items-center justify-center">
                 <ImageWithFallback
