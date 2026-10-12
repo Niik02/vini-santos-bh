@@ -9,7 +9,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onExploreProposals }) => {
   return (
-    <section id="inicio" className="pt-28 pb-16 md:pt-36 md:pb-24 bg-white border-b border-neutral-200">
+    <section id="inicio" className="pt-24 pb-16 md:pt-36 md:pb-24 bg-white border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Text & CTAs */}

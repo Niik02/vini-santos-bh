@@ -42,34 +42,34 @@ export const Header: React.FC<HeaderProps> = ({ onSelectCategory }) => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-200 ${
-        scrolled ? 'shadow-sm border-b border-neutral-200/90' : 'border-b border-neutral-200'
+        scrolled ? 'shadow-xs border-b border-neutral-200/90' : 'border-b border-neutral-200'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo & Brand */}
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20 gap-2">
+          {/* Logo & Brand - Single-line harmonious layout on mobile and desktop */}
           <a
             href="#inicio"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick('#inicio', 'all');
             }}
-            className="flex items-center gap-3.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-md p-1 -ml-1"
+            className="flex items-center gap-2 sm:gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-md p-1 min-w-0 shrink"
             aria-label="Vini Santos - Início"
           >
-            <div className="w-12 h-12 flex items-center justify-center bg-white rounded border border-neutral-200 overflow-hidden shrink-0">
+            <div className="w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center bg-white rounded border border-neutral-200 overflow-hidden shrink-0">
               <ImageWithFallback
                 src={IMAGES.logoBh}
                 alt="Logo Belo Horizonte"
-                className="w-full h-full object-contain p-1"
+                className="w-full h-full object-contain p-0.5"
                 fallbackText="BH"
               />
             </div>
-            <div className="flex flex-col">
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-neutral-950 group-hover:text-neutral-700 transition-colors">
+            <div className="flex flex-col justify-center min-w-0">
+              <span className="font-extrabold text-sm sm:text-base md:text-lg tracking-tight text-neutral-950 group-hover:text-neutral-700 transition-colors whitespace-nowrap leading-tight">
                 VINI SANTOS
               </span>
-              <span className="text-[11px] font-semibold text-neutral-500 uppercase tracking-wider -mt-0.5">
+              <span className="text-[10px] sm:text-xs font-semibold text-neutral-500 uppercase tracking-wider whitespace-nowrap leading-none mt-0.5">
                 Belo Horizonte
               </span>
             </div>
@@ -93,28 +93,28 @@ export const Header: React.FC<HeaderProps> = ({ onSelectCategory }) => {
           </nav>
 
           {/* Action Button & Mobile Menu Toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <a
               href={GOOGLE_FORMS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 active:bg-amber-500 text-neutral-950 font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-md border border-amber-500/30 shadow-xs hover:shadow transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950"
+              className="inline-flex items-center gap-1.5 sm:gap-2 bg-amber-400 hover:bg-amber-300 active:bg-amber-500 text-neutral-950 font-extrabold text-xs sm:text-sm px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-md border border-amber-500/30 shadow-xs hover:shadow transition-all whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950"
               aria-label="Enviar demanda do seu bairro via Google Forms (abre em nova aba)"
             >
-              <Send className="w-4 h-4 stroke-[2.5]" />
-              <span className="tracking-wide uppercase">ENVIAR DEMANDA</span>
-              <ExternalLink className="w-3.5 h-3.5 opacity-60 hidden sm:inline" />
+              <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5]" />
+              <span className="tracking-wide uppercase text-[11px] sm:text-xs md:text-sm">ENVIAR DEMANDA</span>
+              <ExternalLink className="w-3.5 h-3.5 opacity-60 hidden md:inline" />
             </a>
 
             {/* Mobile hamburger button */}
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="xl:hidden p-2 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              className="xl:hidden p-1.5 sm:p-2 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 shrink-0"
               aria-expanded={isMobileMenuOpen}
               aria-label={isMobileMenuOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação'}
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>
