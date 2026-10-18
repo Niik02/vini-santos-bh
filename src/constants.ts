@@ -250,7 +250,7 @@ export const PROPOSALS: Proposal[] = [
       'Avaliação técnica do impacto econômico no turismo, na hotelaria e no comércio da capital quando viável.',
     ],
     safeguards: [
-      'A proposta NÃO pretende acabar com shows públicos ou inviabilizar festividades populares tradicionais.',
+      'A iniciativa NÃO pretende acabar com shows públicos ou inviabilizar festividades populares tradicionais.',
       'NÃO visa extinguir políticas públicas culturais de fomento a artistas locais ou patrimônio cultural.',
       'NÃO tem como objetivo proibir festivais ou cancelar automaticamente eventos em virtude do descumprimento isolado ou temporário de uma meta.',
       'Trata-se de uma ferramenta de bom senso, planejamento e respeito com os recursos dos contribuintes.',

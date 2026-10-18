@@ -75,7 +75,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onScrollToProposals 
             </h2>
 
             {/* Verbatim Paragraphs from user specification */}
-            <div className="space-y-4 text-base sm:text-lg text-neutral-700 leading-relaxed font-normal">
+            <div className="space-y-4 text-base sm:text-lg text-neutral-700 leading-relaxed font-normal text-justify text-abnt">
               <p>
                 Vini Santos é cuidador de pessoas com paralisia cerebral e alguém que acredita que Belo Horizonte pode oferecer uma qualidade de vida muito melhor aos seus moradores.
               </p>
@@ -92,17 +92,17 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onScrollToProposals 
                 Outro ponto fundamental é a transparência na utilização do dinheiro público. Obras, contratos e investimentos precisam ser acompanhados pela população, com informações acessíveis, fiscalização e prestação de contas.
               </p>
 
-              <div className="bg-neutral-50 p-4 rounded-lg border-l-4 border-neutral-900 text-sm text-neutral-800">
+              <div className="bg-neutral-50 p-4 rounded-lg border-l-4 border-neutral-900 text-sm text-neutral-800 text-justify text-abnt">
                 <span className="font-bold text-neutral-950 block mb-1">Fiscalização Responsável:</span>
                 Há questionamentos sobre prejuízos em obras públicas que ultrapassariam R$ 35 milhões. Esse tema exige esclarecimento, transparência e apuração responsável. A referência deve ser acompanhada de uma fonte verificável antes de ser apresentada como fato comprovado.
               </div>
 
               <p>
-                Vini acredita que a cidade precisa de propostas sérias, planejamento e responsabilidade com os recursos que pertencem à população.
+                Vini acredita que a cidade precisa de ideias sérias, planejamento e responsabilidade com os recursos que pertencem à população.
               </p>
 
               <p>
-                Por isso, apresenta seis propostas voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade nos gastos públicos.
+                Por isso, apresenta seis ideias voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade nos gastos públicos.
               </p>
 
               <p>
@@ -125,7 +125,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onScrollToProposals 
                 onClick={onScrollToProposals}
                 className="inline-flex items-center justify-center gap-2.5 bg-neutral-950 hover:bg-neutral-800 active:bg-black text-white font-bold text-sm sm:text-base px-7 py-4 rounded-md shadow-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               >
-                <span>CONHEÇA MINHAS PROPOSTAS</span>
+                <span>CONHEÇA MINHAS IDEIAS</span>
                 <ArrowDown className="w-4 h-4 text-amber-400 stroke-[2.5]" />
               </button>
             </div>

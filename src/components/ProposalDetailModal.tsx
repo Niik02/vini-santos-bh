@@ -61,7 +61,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
         <div className="flex items-center justify-between px-5 sm:px-8 py-4 bg-white border-b border-neutral-200 sticky top-0 z-10">
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center justify-center bg-amber-400 text-neutral-950 font-black text-sm px-2.5 py-1 rounded">
-              PROPOSTA {proposal.number}
+              IDEIA {proposal.number}
             </span>
             <span className="text-xs sm:text-sm font-semibold text-neutral-600 hidden sm:inline">
               {proposal.category}
@@ -73,7 +73,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
               type="button"
               onClick={onClose}
               className="p-2 text-neutral-500 hover:text-neutral-950 hover:bg-neutral-100 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-              aria-label="Fechar detalhes da proposta"
+              aria-label="Fechar detalhes da ideia"
             >
               <X className="w-5 h-5" />
             </button>
@@ -94,7 +94,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
               {proposal.title}
             </h2>
 
-            <p className="text-base sm:text-lg text-neutral-700 leading-relaxed font-normal bg-neutral-50 p-4 rounded-lg border-l-4 border-amber-400">
+            <p className="text-base sm:text-lg text-neutral-700 leading-relaxed font-normal bg-neutral-50 p-4 rounded-lg border-l-4 border-amber-400 text-justify text-abnt">
               {proposal.summary}
             </p>
 
@@ -140,7 +140,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
           {proposal.pillars && (
             <div className="pt-6 space-y-4">
               <div className="text-xs font-bold text-neutral-900 uppercase tracking-wider">
-                Os Três Pilares da Proposta
+                Os Três Pilares da Ideia
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {proposal.pillars.map((pillar) => (
@@ -168,7 +168,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
                 <AlertTriangle className="w-4 h-4 text-red-600" />
                 <span>O Problema que Queremos Enfrentar</span>
               </div>
-              <p className="text-sm text-neutral-700 leading-relaxed">
+              <p className="text-sm text-neutral-700 leading-relaxed text-justify text-abnt">
                 {proposal.problem}
               </p>
             </div>
@@ -178,7 +178,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                 <span>A Solução Planejada</span>
               </div>
-              <p className="text-sm text-neutral-700 leading-relaxed">
+              <p className="text-sm text-neutral-700 leading-relaxed text-justify text-abnt">
                 {proposal.solution}
               </p>
             </div>
@@ -188,7 +188,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
           <div className="pt-6 space-y-4">
             <div className="flex items-center gap-2 text-neutral-950 font-extrabold text-sm sm:text-base tracking-wide uppercase">
               <ListChecks className="w-5 h-5 text-amber-500" />
-              <span>Como Esta Proposta Vai Funcionar na Prática</span>
+              <span>Como Esta Ideia Vai Funcionar na Prática</span>
             </div>
 
             <div className="grid grid-cols-1 gap-2.5">
@@ -210,7 +210,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
           <div className="pt-6 space-y-4">
             <div className="flex items-center gap-2 text-neutral-950 font-extrabold text-sm sm:text-base tracking-wide uppercase">
               <ShieldAlert className="w-5 h-5 text-neutral-800" />
-              <span>Garantias, Critérios e Condições da Proposta</span>
+              <span>Garantias, Critérios e Condições da Ideia</span>
             </div>
 
             <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-5 space-y-3">
@@ -228,9 +228,9 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
             <div className="bg-neutral-950 text-white rounded-lg p-5 sm:p-6 border border-neutral-800">
               <div className="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider mb-2">
                 <Target className="w-4 h-4" />
-                <span>Objetivo Final da Proposta</span>
+                <span>Objetivo Final da Ideia</span>
               </div>
-              <p className="text-sm sm:text-base text-neutral-200 leading-relaxed font-medium">
+              <p className="text-sm sm:text-base text-neutral-200 leading-relaxed font-medium text-justify text-abnt">
                 {proposal.objective}
               </p>
             </div>
@@ -254,7 +254,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
                 className="inline-flex items-center gap-2 bg-neutral-950 hover:bg-neutral-800 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-md shrink-0 transition-colors"
               >
                 <Send className="w-4 h-4 text-amber-400" />
-                <span>ENVIAR DEMANDA</span>
+                <span>ENVIAR MINHA DEMANDA</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -269,7 +269,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
             className="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-bold rounded-md border border-neutral-300 transition-colors"
           >
             <FileText className="w-4 h-4" />
-            <span>Voltar para as 6 propostas</span>
+            <span>Voltar para as 6 ideias</span>
           </button>
 
           <div className="flex items-center gap-2">
@@ -277,7 +277,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
               type="button"
               onClick={onPrev}
               className="inline-flex items-center gap-1.5 px-3 py-2 bg-white hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-semibold rounded-md border border-neutral-300 transition-colors"
-              aria-label="Proposta anterior"
+              aria-label="Ideia anterior"
             >
               <ArrowLeft className="w-4 h-4" />
               <span className="hidden sm:inline">Anterior</span>
@@ -289,7 +289,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
               type="button"
               onClick={onNext}
               className="inline-flex items-center gap-1.5 px-3 py-2 bg-white hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-semibold rounded-md border border-neutral-300 transition-colors"
-              aria-label="Próxima proposta"
+              aria-label="Próxima ideia"
             >
               <span className="hidden sm:inline">Próxima</span>
               <ArrowRight className="w-4 h-4" />

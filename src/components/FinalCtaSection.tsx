@@ -17,7 +17,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToProp
 
         {/* Text */}
         <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-          Conheça as propostas, compartilhe suas ideias e envie os problemas que precisam de atenção na nossa cidade.
+          Conheça as ideias, participe e envie os problemas que precisam de atenção na nossa cidade.
         </p>
 
         {/* Two Buttons */}
@@ -27,7 +27,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToProp
             onClick={onScrollToProposals}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white hover:bg-neutral-100 text-neutral-950 font-extrabold text-sm sm:text-base px-7 py-4 rounded-md transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
           >
-            <span>VER AS SEIS PROPOSTAS</span>
+            <span>VER AS SEIS IDEIAS</span>
             <ArrowUp className="w-4 h-4 stroke-[2.5]" />
           </button>
 
@@ -38,7 +38,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToProp
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-sm sm:text-base px-8 py-4 rounded-md shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             <Send className="w-4 h-4 stroke-[2.5]" />
-            <span className="tracking-wide uppercase">ENVIAR DEMANDA</span>
+            <span className="tracking-wide uppercase">ENVIAR MINHA DEMANDA</span>
             <ExternalLink className="w-4 h-4 opacity-70" />
           </a>
         </div>

@@ -41,7 +41,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
   onFilterChange,
 }) => {
   const categories = [
-    { label: 'Todas as 6 propostas', value: 'all' },
+    { label: 'Todas as 6 ideias', value: 'all' },
     { label: 'Educação & Segurança (3)', value: 'Educação' },
     { label: 'Integridade Pública (1)', value: 'Integridade pública' },
     { label: 'Cuidado com a Cidade (1)', value: 'Zeladoria urbana e inclusão produtiva' },
@@ -67,11 +67,11 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-950 tracking-tight leading-tight mb-4">
-            Seis propostas para transformar Belo Horizonte
+            Seis ideias para transformar Belo Horizonte
           </h2>
 
           <p className="text-base sm:text-lg text-neutral-600 leading-relaxed">
-            Conheça as ideias, entenda os problemas que queremos enfrentar e veja como cada proposta pretende funcionar.
+            Conheça as ideias, entenda os problemas que queremos enfrentar e veja como cada ideia pretende funcionar.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
                       {proposal.number}
                     </span>
                     <span className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">
-                      PROPOSTA
+                      IDEIA
                     </span>
                   </div>
                   <div className="p-2 bg-amber-50 rounded-lg border border-amber-200/60">
@@ -141,7 +141,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
                   onClick={() => onSelectProposal(proposal)}
                   className="w-full inline-flex items-center justify-center gap-2 bg-neutral-900 hover:bg-amber-400 group-hover:bg-amber-400 text-white hover:text-neutral-950 group-hover:text-neutral-950 font-bold text-xs sm:text-sm py-3 px-4 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
-                  <span>CONHEÇA A PROPOSTA</span>
+                  <span>CONHEÇA A IDEIA</span>
                   <ArrowRight className="w-4 h-4 stroke-[2.5]" />
                 </button>
               </div>
@@ -154,7 +154,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0"></span>
             <span>
-              Todas as 6 propostas detalham problema, solução, funcionamento e garantias de acordo com o plano oficial para BH.
+              Todas as 6 ideias detalham problema, solução, funcionamento e garantias de acordo com o plano oficial para BH.
             </span>
           </div>
           <span className="text-neutral-400 shrink-0 font-medium">Documento oficial de Belo Horizonte</span>

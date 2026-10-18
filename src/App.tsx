@@ -19,7 +19,7 @@ export default function App() {
       const hash = window.location.hash.replace('#', '');
       if (hash) {
         const matchingProposal = PROPOSALS.find(
-          (p) => p.id === hash || `proposta-${p.number}` === hash
+          (p) => p.id === hash || `proposta-${p.number}` === hash || `ideia-${p.number}` === hash
         );
         if (matchingProposal) {
           setSelectedProposal(matchingProposal);

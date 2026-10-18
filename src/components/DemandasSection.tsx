@@ -9,17 +9,17 @@ export const DemandasSection: React.FC = () => {
         {/* Badge / Pill */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-neutral-950 text-amber-300 text-xs font-black uppercase tracking-wider rounded-md mb-6 shadow-xs">
           <MessageSquareWarning className="w-4 h-4 text-amber-400" />
-          <span>Participação e Escuta Ativa</span>
+          <span>Participação Popular</span>
         </div>
 
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6 text-neutral-950">
-          O que precisa melhorar no seu bairro?
+          Sua voz sobre BH
         </h2>
 
         {/* Main Text */}
         <p className="text-lg sm:text-xl md:text-2xl text-neutral-900 font-medium leading-relaxed max-w-3xl mx-auto mb-6">
-          Você conhece de perto os problemas da sua rua, do seu bairro e da nossa cidade. Queremos ouvir você. Envie sua demanda, relate o problema e ajude a identificar o que precisa de atenção em Belo Horizonte.
+          Tem algum problema no seu bairro que precisa ser resolvido? Envie sua demanda e ajude a mostrar o que precisa mudar na nossa cidade.
         </p>
 
         {/* Complementary Phrase */}
@@ -37,7 +37,7 @@ export const DemandasSection: React.FC = () => {
             aria-label="Enviar minha demanda para Vini Santos pelo formulário oficial (abre em nova aba)"
           >
             <Send className="w-6 h-6 text-amber-400 stroke-[2.5]" />
-            <span className="tracking-wide uppercase">ENVIAR MINHA DEMANDA</span>
+            <span className="tracking-wide uppercase">Enviar minha demanda</span>
             <ExternalLink className="w-5 h-5 text-neutral-300" />
           </a>
         </div>

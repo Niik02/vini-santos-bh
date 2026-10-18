@@ -17,28 +17,29 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProposals }) => {
             {/* Small identification kicker */}
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 border border-amber-300 text-neutral-900 text-xs font-bold tracking-wider uppercase rounded-md w-fit mb-5">
               <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-              MINHAS PROPOSTAS PARA BELO HORIZONTE
+              MINHAS IDEIAS PARA BELO HORIZONTE
             </div>
 
             {/* Main Title */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-neutral-950 tracking-tight leading-[1.15] mb-6">
-              Uma cidade melhor começa com{' '}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-neutral-950 tracking-tight leading-[1.15] mb-5">
+              O que precisa mudar em{' '}
               <span className="relative inline-block whitespace-nowrap">
-                <span className="relative z-10 text-neutral-950">propostas sérias</span>
+                <span className="relative z-10 text-neutral-950">BH</span>
                 <span
                   className="absolute left-0 bottom-1.5 w-full h-3.5 bg-amber-300 -z-0 opacity-80"
                   aria-hidden="true"
                 ></span>
               </span>
-              .
             </h1>
 
-            {/* Presentation copy verbatim from prompt */}
-            <p className="text-base sm:text-lg text-neutral-700 leading-relaxed mb-4">
-              Belo Horizonte precisa de mais eficiência na gestão pública, transparência na utilização dos recursos e soluções concretas para os problemas que afetam a vida da população.
+            {/* Subtitle */}
+            <p className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-900 leading-snug mb-4">
+              Seis caminhos para uma cidade mais organizada, transparente e eficiente.
             </p>
-            <p className="text-base sm:text-lg text-neutral-800 font-medium leading-relaxed mb-8">
-              Conheça seis propostas voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade com o dinheiro público.
+
+            {/* Presentation copy */}
+            <p className="text-base sm:text-lg text-neutral-700 leading-relaxed mb-8 text-justify text-abnt">
+              Belo Horizonte precisa de mais eficiência na gestão pública, transparência na utilização dos recursos e soluções concretas para os problemas que afetam a vida da população. Conheça seis ideias voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade com o dinheiro público.
             </p>
 
             {/* Buttons */}
@@ -48,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProposals }) => {
                 onClick={onExploreProposals}
                 className="inline-flex items-center justify-center gap-2.5 bg-neutral-950 hover:bg-neutral-800 active:bg-black text-white font-bold text-sm sm:text-base px-6 py-3.5 rounded-md shadow-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               >
-                <span>CONHEÇA AS 6 PROPOSTAS</span>
+                <span>Conheça as ideias</span>
                 <ArrowDown className="w-4 h-4 text-amber-400 stroke-[2.5]" />
               </button>
 
@@ -59,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProposals }) => {
                 className="inline-flex items-center justify-center gap-2.5 bg-amber-400 hover:bg-amber-300 active:bg-amber-500 text-neutral-950 font-bold text-sm sm:text-base px-6 py-3.5 rounded-md border border-amber-500/40 shadow-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950"
               >
                 <Send className="w-4 h-4 stroke-[2.5]" />
-                <span>ENVIE A DEMANDA DO SEU BAIRRO</span>
+                <span>Enviar minha demanda</span>
                 <ExternalLink className="w-4 h-4 opacity-70" />
               </a>
             </div>
@@ -115,7 +116,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProposals }) => {
             {/* Institutional label underneath */}
             <div className="mt-8 text-center max-w-xs">
               <p className="text-xs sm:text-sm font-semibold text-neutral-800">
-                Compromisso com propostas sérias para Belo Horizonte
+                Compromisso com ideias sérias para Belo Horizonte
               </p>
             </div>
           </div>
