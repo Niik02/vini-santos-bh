@@ -44,12 +44,27 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
   onFilterChange,
 }) => {
   const categories = [
-    { label: 'Todas as 7 ideias', value: 'all' },
-    { label: 'Educação & Segurança (3)', value: 'Educação' },
-    { label: 'Integridade Pública (1)', value: 'Integridade pública' },
-    { label: 'Cuidado com a Cidade (1)', value: 'Zeladoria urbana e inclusão produtiva' },
-    { label: 'Gasto Responsável (1)', value: 'Gestão pública e orçamento' },
-    { label: 'Justiça Tributária & Infraestrutura (1)', value: 'Infraestrutura e Justiça Tributária' },
+    { label: `Todas as ideias (${PROPOSALS.length})`, value: 'all' },
+    {
+      label: `Educação & Segurança (${PROPOSALS.filter((p) => p.category === 'Educação' || p.category === 'Educação e segurança escolar').length})`,
+      value: 'Educação',
+    },
+    {
+      label: `Integridade Pública (${PROPOSALS.filter((p) => p.category === 'Integridade pública').length})`,
+      value: 'Integridade pública',
+    },
+    {
+      label: `Cuidado com a Cidade (${PROPOSALS.filter((p) => p.category === 'Zeladoria urbana e inclusão produtiva').length})`,
+      value: 'Zeladoria urbana e inclusão produtiva',
+    },
+    {
+      label: `Gasto Responsável (${PROPOSALS.filter((p) => p.category === 'Gestão pública e orçamento').length})`,
+      value: 'Gestão pública e orçamento',
+    },
+    {
+      label: `Justiça Tributária & Infraestrutura (${PROPOSALS.filter((p) => p.category === 'Infraestrutura e Justiça Tributária').length})`,
+      value: 'Infraestrutura e Justiça Tributária',
+    },
   ];
 
   const filteredProposals = PROPOSALS.filter((p) => {
@@ -71,7 +86,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-950 tracking-tight leading-tight mb-4">
-            Sete ideias para transformar Belo Horizonte
+            Ideias para transformar Belo Horizonte
           </h2>
 
           <p className="text-base sm:text-lg text-neutral-600 leading-relaxed">
@@ -163,7 +178,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0"></span>
             <span>
-              Todas as 7 ideias detalham problema, solução, funcionamento e garantias de acordo com o plano oficial para BH.
+              Todas as ideias detalham problema, solução, funcionamento e garantias de acordo com o plano oficial para BH.
             </span>
           </div>
           <span className="text-neutral-400 shrink-0 font-medium">Documento oficial de Belo Horizonte</span>

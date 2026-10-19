@@ -34,12 +34,12 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProposals }) => {
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-900 leading-snug mb-4">
-              Seis caminhos para uma cidade mais organizada, transparente e eficiente.
+              Caminhos para uma cidade mais organizada, transparente e eficiente.
             </p>
 
             {/* Presentation copy */}
             <p className="text-base sm:text-lg text-neutral-700 leading-relaxed mb-8 text-justify text-abnt">
-              Belo Horizonte precisa de mais eficiência na gestão pública, transparência na utilização dos recursos e soluções concretas para os problemas que afetam a vida da população. Conheça seis ideias voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade com o dinheiro público.
+              Belo Horizonte precisa de mais eficiência na gestão pública, transparência na utilização dos recursos e soluções concretas para os problemas que afetam a vida da população. Conheça as ideias voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade com o dinheiro público.
             </p>
 
             {/* Buttons */}

@@ -276,7 +276,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
             className="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-bold rounded-md border border-neutral-300 transition-colors"
           >
             <FileText className="w-4 h-4" />
-            <span>Voltar para as 7 ideias</span>
+            <span>Voltar para as ideias</span>
           </button>
 
           <div className="flex items-center gap-2">

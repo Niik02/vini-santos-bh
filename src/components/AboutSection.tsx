@@ -102,7 +102,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onScrollToProposals 
               </p>
 
               <p>
-                Por isso, apresenta seis ideias voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade nos gastos públicos.
+                Por isso, apresenta ideias voltadas à educação, à segurança escolar, à integridade dos contratos públicos, ao cuidado com a cidade e à responsabilidade nos gastos públicos.
               </p>
 
               <p>
