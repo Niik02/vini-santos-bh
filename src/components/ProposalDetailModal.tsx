@@ -90,9 +90,16 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
               <span className="text-neutral-400">{proposal.pdfPages}</span>
             </div>
 
-            <h2 id="modal-proposal-title" className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight">
-              {proposal.title}
-            </h2>
+            <div>
+              <h2 id="modal-proposal-title" className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight">
+                {proposal.title}
+              </h2>
+              {proposal.subtitle && (
+                <p className="text-sm sm:text-base font-bold text-neutral-600 mt-1">
+                  {proposal.subtitle}
+                </p>
+              )}
+            </div>
 
             <p className="text-base sm:text-lg text-neutral-700 leading-relaxed font-normal bg-neutral-50 p-4 rounded-lg border-l-4 border-amber-400 text-justify text-abnt">
               {proposal.summary}
@@ -269,7 +276,7 @@ export const ProposalDetailModal: React.FC<ProposalDetailModalProps> = ({
             className="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-neutral-200 text-neutral-800 text-xs sm:text-sm font-bold rounded-md border border-neutral-300 transition-colors"
           >
             <FileText className="w-4 h-4" />
-            <span>Voltar para as 6 ideias</span>
+            <span>Voltar para as 7 ideias</span>
           </button>
 
           <div className="flex items-center gap-2">

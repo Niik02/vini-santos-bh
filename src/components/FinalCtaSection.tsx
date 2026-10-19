@@ -27,7 +27,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onScrollToProp
             onClick={onScrollToProposals}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white hover:bg-neutral-100 text-neutral-950 font-extrabold text-sm sm:text-base px-7 py-4 rounded-md transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
           >
-            <span>VER AS SEIS IDEIAS</span>
+            <span>VER AS SETE IDEIAS</span>
             <ArrowUp className="w-4 h-4 stroke-[2.5]" />
           </button>
 

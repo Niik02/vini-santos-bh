@@ -8,6 +8,7 @@ import {
   FileCheck,
   Hammer,
   Scale,
+  Building2,
 } from 'lucide-react';
 
 interface ProposalsSectionProps {
@@ -30,6 +31,8 @@ const getCategoryIcon = (proposalId: string) => {
       return <Hammer className="w-5 h-5 text-amber-500" />;
     case 'gasto-responsavel':
       return <Scale className="w-5 h-5 text-amber-500" />;
+    case 'iptu-justo':
+      return <Building2 className="w-5 h-5 text-amber-500" />;
     default:
       return null;
   }
@@ -41,11 +44,12 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
   onFilterChange,
 }) => {
   const categories = [
-    { label: 'Todas as 6 ideias', value: 'all' },
+    { label: 'Todas as 7 ideias', value: 'all' },
     { label: 'Educação & Segurança (3)', value: 'Educação' },
     { label: 'Integridade Pública (1)', value: 'Integridade pública' },
     { label: 'Cuidado com a Cidade (1)', value: 'Zeladoria urbana e inclusão produtiva' },
     { label: 'Gasto Responsável (1)', value: 'Gestão pública e orçamento' },
+    { label: 'Justiça Tributária & Infraestrutura (1)', value: 'Infraestrutura e Justiça Tributária' },
   ];
 
   const filteredProposals = PROPOSALS.filter((p) => {
@@ -67,7 +71,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-950 tracking-tight leading-tight mb-4">
-            Seis ideias para transformar Belo Horizonte
+            Sete ideias para transformar Belo Horizonte
           </h2>
 
           <p className="text-base sm:text-lg text-neutral-600 leading-relaxed">
@@ -124,12 +128,17 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg sm:text-xl font-extrabold text-neutral-950 leading-snug mb-3.5 group-hover:text-neutral-800 transition-colors">
+                <h3 className="text-lg sm:text-xl font-extrabold text-neutral-950 leading-snug mb-1 group-hover:text-neutral-800 transition-colors">
                   {proposal.title}
                 </h3>
+                {proposal.subtitle && (
+                  <p className="text-xs font-semibold text-neutral-500 mb-2.5">
+                    {proposal.subtitle}
+                  </p>
+                )}
 
                 {/* Summary */}
-                <p className="text-sm text-neutral-600 leading-relaxed mb-6">
+                <p className="text-sm text-neutral-600 leading-relaxed mb-6 mt-2">
                   {proposal.summary}
                 </p>
               </div>
@@ -154,7 +163,7 @@ export const ProposalsSection: React.FC<ProposalsSectionProps> = ({
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0"></span>
             <span>
-              Todas as 6 ideias detalham problema, solução, funcionamento e garantias de acordo com o plano oficial para BH.
+              Todas as 7 ideias detalham problema, solução, funcionamento e garantias de acordo com o plano oficial para BH.
             </span>
           </div>
           <span className="text-neutral-400 shrink-0 font-medium">Documento oficial de Belo Horizonte</span>

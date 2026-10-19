@@ -10,9 +10,16 @@ export const IMAGES = {
 export interface Proposal {
   id: string;
   number: string;
-  category: 'Educação' | 'Educação e segurança escolar' | 'Integridade pública' | 'Zeladoria urbana e inclusão produtiva' | 'Gestão pública e orçamento';
-  navSection: 'educacao' | 'integridade' | 'cuidado' | 'gasto';
+  category:
+    | 'Educação'
+    | 'Educação e segurança escolar'
+    | 'Integridade pública'
+    | 'Zeladoria urbana e inclusão produtiva'
+    | 'Gestão pública e orçamento'
+    | 'Infraestrutura e Justiça Tributária';
+  navSection: 'educacao' | 'integridade' | 'cuidado' | 'gasto' | 'tributario';
   title: string;
+  subtitle?: string;
   summary: string;
   highlightQuote?: string;
   pdfPages: string;
@@ -257,5 +264,46 @@ export const PROPOSALS: Proposal[] = [
     ],
     objective:
       'Garantir que os recursos do contribuinte de Belo Horizonte atendam com prioridade absoluta à saúde, à segurança e à educação, promovendo eventos culturais de forma planejada e sem excessos fiscais.',
+  },
+  {
+    id: 'iptu-justo',
+    number: '07',
+    category: 'Infraestrutura e Justiça Tributária',
+    navSection: 'cuidado',
+    title: 'IPTU JUSTO',
+    subtitle: 'Mais justiça para quem paga seus impostos',
+    summary:
+      'Promover maior transparência e justiça na avaliação dos imóveis para fins de IPTU, permitindo que as condições reais da infraestrutura urbana sejam consideradas nos procedimentos de revisão, conforme a legislação aplicável.',
+    highlightQuote:
+      'O cidadão deve pagar o que é devido, e o Município deve garantir critérios claros, avaliações corretas e respeito a quem mantém a cidade com seus impostos.',
+    pdfPages: 'Proposta apresentada',
+    problem:
+      'Em Belo Horizonte, moradores podem pagar valores elevados de IPTU mesmo vivendo em ruas sem pavimentação, com buracos, infraestrutura precária ou trechos que, embora oficialmente classificados como ruas e avenidas, não apresentam condições adequadas de acesso e circulação. O IPTU é um tributo legítimo, mas sua cobrança deve respeitar a legislação e permitir que eventuais erros cadastrais ou de avaliação sejam corrigidos. O contribuinte não pode ficar sem um caminho acessível para questionar uma cobrança incompatível com a realidade do seu imóvel.',
+    solution:
+      'O projeto IPTU Justo propõe estabelecer critérios para que as condições da infraestrutura viária sejam consideradas na revisão cadastral e na avaliação do valor venal dos imóveis, quando forem relevantes para o cálculo do imposto. A iniciativa busca combater possíveis injustiças tributárias e garantir que o cidadão tenha meios efetivos de contestar avaliações inadequadas, com transparência e fundamentação.',
+    visualFlow: {
+      label: 'Etapas de Revisão e Justiça Tributária',
+      steps: [
+        'SOLICITAÇÃO DE REVISÃO',
+        'ANÁLISE DE INFRAESTRUTURA',
+        'CRITÉRIOS OBJETIVOS',
+        'RESPOSTA FUNDAMENTADA',
+      ],
+    },
+    howItWorks: [
+      'Revisão do IPTU: facilitar a solicitação de reavaliação quando houver indícios de erro cadastral ou inadequação dos elementos utilizados no cálculo.',
+      'Critérios objetivos: considerar situações como ruas sem pavimentação, pavimento gravemente deteriorado e trechos oficialmente classificados como vias, mas sem implantação adequada.',
+      'Transparência: permitir que o morador apresente fotografias, documentos e registros das condições do local e receba uma resposta fundamentada.',
+      'Benefício tributário: abrir caminho para a criação de descontos ou outros benefícios fiscais em situações graves e comprovadas, desde que previstos em lei e respeitadas as exigências orçamentárias.',
+      'Decisão fundamentada: assegurar ao cidadão prazos e critérios claros para questionar avaliações que não correspondam à realidade do seu imóvel e do entorno.',
+    ],
+    safeguards: [
+      'O objetivo não é acabar com o imposto nem conceder benefícios indiscriminadamente, mas combater possíveis injustiças tributárias.',
+      'Respeito rigoroso à legislação tributária aplicável e às exigências orçamentárias e de responsabilidade fiscal.',
+      'A população tem o dever de pagar seus impostos, e o Município tem o dever de garantir transparência, avaliações justas e administração pública responsável.',
+      'Defesa permanente do equilíbrio entre a responsabilidade na arrecadação e o respeito a quem mantém a cidade.',
+    ],
+    objective:
+      'Promover maior transparência e justiça na avaliação dos imóveis para fins de IPTU, permitindo que as condições reais da infraestrutura urbana sejam consideradas nos procedimentos de revisão, conforme a legislação aplicável.',
   },
 ];

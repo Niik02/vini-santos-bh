@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
 
             <p className="text-sm text-neutral-400 leading-relaxed max-w-sm">
-              Seis ideias para Belo Horizonte: iniciativas fundamentadas em fiscalização, transparência e cuidado com quem mais precisa.
+              Sete ideias para Belo Horizonte: iniciativas fundamentadas em fiscalização, transparência e cuidado com quem mais precisa.
             </p>
 
             <div className="pt-2">
@@ -81,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={onScrollToProposals}
                   className="text-neutral-300 hover:text-white transition-colors"
                 >
-                  Seis ideias para Belo Horizonte
+                  Sete ideias para Belo Horizonte
                 </button>
               </li>
               <li>
