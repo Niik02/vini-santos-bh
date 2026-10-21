@@ -2,7 +2,6 @@ import React from 'react';
 import { Proposal, PROPOSALS } from '../constants';
 import {
   ArrowRight,
-  GraduationCap,
   Shield,
   Award,
   FileCheck,
@@ -19,8 +18,6 @@ interface ProposalsSectionProps {
 
 const getCategoryIcon = (proposalId: string) => {
   switch (proposalId) {
-    case 'metodo-fonico':
-      return <GraduationCap className="w-5 h-5 text-amber-500" />;
     case 'cameras-salas-de-aula':
       return <Shield className="w-5 h-5 text-amber-500" />;
     case 'escola-nota-10':

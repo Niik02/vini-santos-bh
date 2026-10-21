@@ -40,38 +40,8 @@ export interface Proposal {
 
 export const PROPOSALS: Proposal[] = [
   {
-    id: 'metodo-fonico',
-    number: '01',
-    category: 'Educação',
-    navSection: 'educacao',
-    title: 'MÉTODO FÔNICO NO ENSINO INFANTIL',
-    summary:
-      'Fortalecer a alfabetização por meio do ensino sistemático da relação entre os sons da fala e as letras, com formação de professores, materiais adequados e acompanhamento dos resultados.',
-    highlightQuote: 'Uma base sólida na alfabetização é o primeiro passo para o sucesso educacional de todas as crianças.',
-    pdfPages: 'Páginas 3 e 4 do PDF oficial',
-    problem:
-      'Milhares de crianças em Belo Horizonte concluem as primeiras etapas escolares com defasagens graves na alfabetização, sem dominar com segurança a relação direta entre o som emitido na fala e os grafemas escritos. A ausência de um método estruturado e uniforme compromete todo o ciclo educacional posterior.',
-    solution:
-      'Implantação orientada do método fônico nas escolas municipais de educação infantil e nos anos iniciais do ensino fundamental, combinando ciência pedagógica, materiais estruturados e suporte integral aos professores.',
-    howItWorks: [
-      'Ensino progressivo e explícito das relações entre fonemas (sons) e grafemas (letras), respeitando cada estágio do desenvolvimento.',
-      'Formação continuada e específica para os professores e coordenadores pedagógicos da rede municipal de ensino.',
-      'Utilização e fornecimento de materiais pedagógicos adequados, estruturados e testados para suporte diário em sala de aula.',
-      'Avaliação periódica e diagnóstica da aprendizagem para monitorar o ritmo das turmas e ajustar o planejamento.',
-      'Identificação precoce de dificuldades individuais de aprendizagem para intervenção pedagógica preventiva.',
-      'Preservação essencial e harmônica do letramento, da literatura infantil, da compreensão textual e do uso social da escrita.',
-    ],
-    safeguards: [
-      'A metodologia fônica não exclui o contato com livros, contação de histórias e produções de texto enriquecedoras.',
-      'Respeito rigoroso às particularidades cognitivas de cada estudante, inclusive crianças com necessidades educacionais especiais.',
-      'Acompanhamento contínuo sem caráter punitivo aos educadores, valorizando sua autonomia pedagógica.',
-    ],
-    objective:
-      'Oferecer um processo de alfabetização estruturado e acompanhado, garantindo que toda criança de Belo Horizonte aprenda a ler e escrever na idade certa, com autonomia e prazer pela leitura.',
-  },
-  {
     id: 'cameras-salas-de-aula',
-    number: '02',
+    number: '01',
     category: 'Educação e segurança escolar',
     navSection: 'educacao',
     title: 'CÂMERAS NAS SALAS DE AULA',
@@ -103,7 +73,7 @@ export const PROPOSALS: Proposal[] = [
   },
   {
     id: 'escola-nota-10',
-    number: '03',
+    number: '02',
     category: 'Educação',
     navSection: 'educacao',
     title: 'PROGRAMA ESCOLA NOTA 10',
@@ -136,7 +106,7 @@ export const PROPOSALS: Proposal[] = [
   },
   {
     id: 'lei-antimafia',
-    number: '04',
+    number: '03',
     category: 'Integridade pública',
     navSection: 'integridade',
     title: 'LEI ANTIMÁFIA EM CONTRATOS PÚBLICOS',
@@ -175,7 +145,7 @@ export const PROPOSALS: Proposal[] = [
   },
   {
     id: 'bh-em-acao',
-    number: '05',
+    number: '04',
     category: 'Zeladoria urbana e inclusão produtiva',
     navSection: 'cuidado',
     title: 'PROGRAMA BH EM AÇÃO',
@@ -219,7 +189,7 @@ export const PROPOSALS: Proposal[] = [
   },
   {
     id: 'gasto-responsavel',
-    number: '06',
+    number: '05',
     category: 'Gestão pública e orçamento',
     navSection: 'gasto',
     title: 'GASTO RESPONSÁVEL',
@@ -267,7 +237,7 @@ export const PROPOSALS: Proposal[] = [
   },
   {
     id: 'iptu-justo',
-    number: '07',
+    number: '06',
     category: 'Infraestrutura e Justiça Tributária',
     navSection: 'cuidado',
     title: 'IPTU JUSTO',
